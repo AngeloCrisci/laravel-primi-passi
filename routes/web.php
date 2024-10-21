@@ -13,16 +13,34 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/' , function () {
-        $contacts = [
+Route::get('/contacts' , function () {
+
+        $contacts =
+        [
             'contatto 1',
             'contatto 2',
             'contatto 3',
-        ];
-        $sponsor = 'SONO UNA PAGINA SPONSOR';
-        $news = 'SONO TANTI ARTICOLI';
 
-        return view('admin.pages.index', compact("contacts ", "sponsor" , "news" ));
+        ];
+        $title = 'QUI CI SONO I NOSTRI CONTATTI';
+
+
+        return view('contacts', compact('contacts' , 'title'));
+});
+
+Route::get('/news' , function () {
+
+    $news = 'WORK IN PROGRESS';
+
+    return view('news' , compact('news'));
+});
+
+Route::get('/sponsor' , function () {
+
+    $sponsor = 'QUESTA PAGINA E PER I SPONSOR';
+
+
+    return view('sponsor' , compact('sponsor'));
 });
 
 Route::get('/', function () {

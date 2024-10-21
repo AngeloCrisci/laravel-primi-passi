@@ -20,13 +20,13 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Contatti</a>
+                                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/contacts">Contatti</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">News</a>
+                                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/news">News</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Sponsor</a>
+                                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/sponsor">Sponsor</a>
                             </li>
                         </ul>
                     </div>
