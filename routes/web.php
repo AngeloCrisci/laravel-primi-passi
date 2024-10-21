@@ -13,6 +13,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/' , function () {
+        $contacts = [
+            'contatto 1',
+            'contatto 2',
+            'contatto 3',
+        ];
+        $sponsor = 'SONO UNA PAGINA SPONSOR';
+        $news = 'SONO TANTI ARTICOLI';
+
+        return view('admin.pages.index', compact("contacts ", "sponsor" , "news" ));
+});
+
 Route::get('/', function () {
     $title = 'Hello World';
 
